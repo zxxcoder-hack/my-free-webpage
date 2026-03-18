@@ -1,0 +1,14 @@
+*{
+  padding: 5px;
+  margin: 0;
+}
+body{
+  height: 100vh;
+  color: #fff;
+  font-family: Times, Monospace;
+  background: linear-gradient(0deg, rgb(5, 5, 7), rgb(5, 5, 30));
+}
+.card{
+  box-shadow: 5px 5px 10px #0000ff;
+  padding: 15px;
+}
