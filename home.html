@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Takemichi Animes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<link rel="stylesheet" href="style/home.css">
+<body>
+  <nav class="toolbar">
+    <div class="toolbarContainer">
+      <div class="logo">
+        <img src="images/logo.webp" alt="">
+        <h3>Takemichi Animes</h3>
+      </div>
+      <div class="links">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: rgb(0,79,227)"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram" style="color: rgb(255,145,21);"></i></a>
+        <a href="https://telegram.com"><i class="fab fa-telegram" style="color: rgb(61,124,201);"></i></a>
+      </div>
+    </div>
+    <a href="menu.html"><i class="fas fa-bars" id="openMenu"></i></a>
+  </nav>
+  
+  <div id="main">
+    <div id="pageCount">
+      
+    </div>
+      <!-- Search Bar -->
+      <div class="search-container">
+          <div class="search-box">
+
+
+                  <input type="text" class="search-input" id="searchInput" placeholder="Search images..." autocomplete="off">
+
+              <button class="clear-search" id="clearSearch">Clear</button>
+          </div>
+      </div>
+      
+      <!-- Pagination Controls -->
+      <div class="pagination-info" id="paginationInfo">
+          <div class="page-indicator" id="pageIndicator">
+              Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
+          </div>
+          <div class="page-controls">
+              <button class="page-btn" id="prevPage" disabled>← Prev</button>
+              <div class="page-numbers" id="pageNumbers"></div>
+              <button class="page-btn" id="nextPage" disabled>Next →</button>
+          </div>
+      </div>
+      
+      <div id="gallery-container" class="image-grid">
+          <!-- Images will be loaded here -->
+          <div class="loading">Loading images...</div>
+      </div>
+      
+  </div>
+  
+  <script src="script/home.js" type="module"></script>
+  <script>
+    const menu = document.getElementById("menu");
+
+function openMenu(){
+  menu.style.display = "block";
+}
+function closeMenu(){
+  menu.style.display = "none";
+}
+
+  </script>
+</body>
+</html>
